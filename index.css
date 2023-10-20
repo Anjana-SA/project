@@ -1,0 +1,114 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #F1F2F4;
+}
+#nav{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    background-color: white;
+    width: 100%;
+    margin: auto;
+    position: sticky;
+}
+
+#nav1{
+    display: flex;
+    flex-direction: column;
+}
+
+#logo_name{
+    font-size: 20px;
+    font-family: sans-serif;
+    font-style: italic;
+    color: #2A55E5;
+    font-weight: bold;
+}
+
+#input_data{
+    border: none;
+    width: 450px;
+    height: 20px;
+    padding-left: 12px;
+    font-size: 17px;
+    background-color: #F0F5FF;
+}
+
+.navtab{
+    display: flex; 
+    align-items: center;
+}
+
+#searchbar{
+    background-color: #F0F5FF;
+    border-radius: 10px;
+}
+
+option{
+    font-size: 15px; 
+    font-family: sans-serif;
+}
+
+select{
+    border: none;
+    font-size: 15px; 
+    font-family: sans-serif;
+}
+
+#categories{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 6px;
+    margin: 12px;
+    margin: auto;
+    width: 95%;
+    padding: 30px 20px;
+    background-color: white;
+    margin-top: 10px;
+    font-family: sans-serif;
+    font-weight: 550;
+    font-size: 14px;
+}
+
+#categories > div > img{
+    height: 60px;
+    width: 70px;
+}
+
+#categories > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#categories>div>p{
+    padding-top: 10px;
+}
+#para1{
+    border: 4px solid orange;
+}
+
+li{
+    list-style: none;
+    justify-content: center;
+    padding-left: 10px;
+    padding-right: 20px;
+}
+
+#footer{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 18px;
+    padding-top: 18px;
+}
+
+.heading{
+    color: grey;
+}
