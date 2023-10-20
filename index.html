@@ -1,73 +1,233 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flipkart</title>
-    <link rel="stylesheet" href="./index.css">
-    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <title>Anjana S A</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div id="container"></div>    
-<section id="categories">
-</section>
-<section id="carousel">
-</section>
-<section id="footer">
-    <div>
-        <li class="heading">About</li>
-        <li>About Us</li>
-        <li>Careers</li>
-        <li>Flipkart Stories</li>
-        <li>Cleartrip</li>
-      </div>
-      <div>
-        <li class="heading">Help</li>
-        <li>Payments</li>
-        <li>Shipping</li>
-        <li>FAQ</li>
-        <li>Report</li>
-      </div>
-      <div>
-        <li class="heading">Consumer Policy</li>
-        <li>Terms Of Use</li>
-        <li>Security</li>
-        <li>Privacy</li>
-        <li>Grievance</li>
-      </div>
-      <div>
-        <li class="heading">Social</li>
-        <li>Facebook</li>
-        <li>Twitter</li>
-        <li>YouTube</li>
-        <!--<li>X</li>-->
-      </div>
-      <div>
-        <li class="heading">Mail Us:</li>
-        <li>Flipkart  Internet Private Limited,</li>
-        <li>Buildings Alyssa, Begonia &</li>
-        <li>Clove Embassy Tech Village,</li>
-        <li>Outer Ring Road, Devarabeesanahalli Village, <br> Bengaluru, 560103,<br> Karnataka, India</li>
-      </div>
-      <div>
-        <li class="heading">Registered Office Address:</li>
-        <li>Flipkart Internet Private Limited,</li>
-        <li>Buildings Alyssa, Begonia &</li>
-        <li>Clove Embassy Tech Village, Bengaluru, <br> 560103, Karnataka, India</li>
-        <li>CIN : U51109KA2012PTC066107 <br> Telephone: 044-45614700</li>
-      </div>
-</section>
-</section>
+    <header>
+        <div class="header-container">
+            <img src="images/Logo.png" class="logo">
+            <h1>
+                <span>P</span>
+                <span>O</span>
+                <span>R</span>
+                <span>T</span>
+                <span>F</span>
+                <span>O</span>
+                <span>L</span>
+                <span>I</span>
+                <span>O</span>
+            </h1>
+            <nav>
+                <div class="container_sub" onclick="toggleMenu(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                    <div id="myDropdown" class="dropdown-content">
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section id="home">
+        <div class="container">
+            <div class="image-container">
+                <img src="images/Self.png" class="self">
+            </div>
+            <div class="text-container">
+                <h2>Home</h2>
+                <p>Hey! I'm Anjana, </p>
+                <p>
+                    <b>Welcome to my digital space- </b> where lines of code meet the canvas of creativity. I'm always open to new ideas, collaborations, and opportunities and I'm driven by the boundless opportunities that await in this dynamic world.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <!-- Portfolio content goes here -->
+        <div class="container-abt">
+            <div class="text_abt">
+                <h2> 👋About Me</h2>
+                <p> 
+
+                    I'm a passionate computer science student based in Chennai, India. My journey into the world of technology began with a curiosity to make computers do incredible things. Python has captured my heart as my primary area of interest. I believe in the power of code to transform ideas into reality. 
+                </p>
+                <p>
+                    My mission is to continually explore and embrace the ever-evolving landscape of technology. I'm enthusiastic about the boundless opportunities that await in the world of computer science.
+                </p>
+            </div>
+            <div class="skills">
+                <h2 class="skill-header">My Skills</h2>
+                <div class="skills-wrapper">
+                    <div class="first-set animate__animated animate__pulse">
+                      <img
+                        src="images/Python-logo.png"
+                        alt=""
+                        loading="lazy"
+                        class="icon icon-card"
+                      />
+                      <img
+                        src="images/R-logo.png"
+                        alt=""
+                        loading="lazy"
+                        class="icon icon-card"
+                      />
+                      <img
+                        src="images/Java-logo.png"
+                        alt=""
+                        loading="lazy"
+                        class="icon icon-card"
+                      />
+                      <img
+                        src="images/HTML5_logo.png"
+                        alt=""
+                        loading="lazy"
+                        class="icon icon-card"
+                      />
+                      <img
+                        src="images/CSS3_logo.png"
+                        alt=""
+                        loading="lazy"
+                        class="icon icon-card"
+                      />
+                      <img
+                        src="images/javascript-logo.png"
+                        alt=""
+                        loading="lazy"
+                        class="icon icon-card"
+                      />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--<section id="projects">
+    </section>-->
+    <section class="projects" id="projects">
+        <h2 class="projects-title">Some of my Recent Projects</h2>
+        <div class="projects-container">
+          <div class="project-container project-card">
+            <img
+              src="./images/Pdf_summarizer.png"
+              alt="pdf_summarizer"
+              loading="lazy"
+              class="project-pic"
+            />
+            <h3 class="project-title">Pdf_summarizer</h3>
+            <p class="project-details">
+              Give any pdf document and get summarized text of the pdf in seconds!
+            </p>
+            <a href="https://github.com/Anjana-SA/project.git" target="_blank" class="project-link">Check it Out</a>
+          </div>
+          <div class="project-container project-card">
+            <img
+              src="./images/FlipkartClone.png"
+              alt="flipkart-clone"
+              loading="lazy"
+              class="project-pic"
+            />
+            <h3 class="project-title">Flipkart Clone</h3>
+            <p class="project-details">
+              A clone of "The One-stop E-commerce Shopping Destination"
+            </p>
+            <a href="https://github.com/Anjana-SA/project.git" target="_blank" class="project-link">Check it Out</a>
+          </div>
+          <div class="project-container project-card">
+            <img
+              src="./images/Game.png"
+              alt="greeny-earth"
+              loading="lazy"
+              class="project-pic"
+            />
+            <h3 class="project-title">Number Guessing game</h3>
+            <p class="project-details">
+              Play n guess the correct number within given chances!
+            </p>
+            <a href="https://github.com/Anjana-SA/project.git" target="_blank" class="project-link">Check it Out</a>
+          </div>
+        </div>
+      </section>
+    
+    <section class="contact" id="contact">
+        <h2>Get In Touch With Me</h2>
+        <div class="contact-form-container">
+          <div class="contact-form">
+            <form action="https://formspree.io/f/xyylngw" method="POST">
+              <div class="form-control">
+                <label for="name">Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="sender-name"
+                  placeholder="Enter Your Name"
+                  class="input-field"
+                  required
+                />
+              </div>
+              <div class="form-control">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="sender-email"
+                  placeholder="Enter Your Email"
+                  class="input-field"
+                  required
+                />
+              </div>
+              <div class="form-control">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  cols="60"
+                  rows="10"
+                  placeholder="Enter Your Message"
+                  name="message"
+                  class="input-field"
+                  required
+                ></textarea>
+              </div>
+              <input
+                type="submit"
+                value="Submit"
+                id="submit-btn"
+                class="submit-btn"
+              />
+            </form>
+          </div>
+        </div>
+    </section>
+
+    <div class="socials">
+        <a href="https://instagram.com/anj_sa_ar?igshid=OGQ5ZDc2ODk2ZA==" target="_blank"
+          ><img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png"
+            alt="Instagram"
+            loading="lazy"
+            class="socicon"
+        /></a>
+        <a href="https://www.linkedin.com/in/anjana-sathish-93b606249?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"
+          ><img
+            src="https://cdn-icons-png.flaticon.com/512/174/174857.png"
+            alt="Linkedin"
+            loading="lazy"
+            class="socicon"
+        /></a>
+        <a href="https://github.com/Anjana-SA/project.git" target="_blank"
+          ><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" 
+          alt="Github" 
+          class="socicon"
+        /></a>
+    <script src="js/script.js"></script>
 </body>
 </html>
-<script>
-    $(function(){
-        $("#container").load("./navbar.html");
-    });
-
-    $(function(){
-        $("#carousel").load("./carousel.html");
-    });
-</script>
-
-<!--<script src="./index.js"></script>-->
